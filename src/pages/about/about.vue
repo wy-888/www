@@ -2,6 +2,7 @@
 {
   layout: 'tabbar',
   style: {
+    navigationStyle: 'custom',
     navigationBarTitleText: '关于',
   },
 }
@@ -23,16 +24,14 @@ console.log('about')
 </script>
 
 <template>
-  <view>
-    <view class="mt-8 text-center text-3xl">
+  <div>
+    <div class="mt-8 text-center text-3xl text-red">
       鸽友们好，我是
-      <text class="text-red-500">
-        菲鸽
-      </text>
-    </view>
+      <span class="text-red-500">菲鸽</span>
+    </div>
     <RequestComp />
     <UploadComp />
-  </view>
+  </div>
 </template>
 
 <style lang="scss" scoped>
